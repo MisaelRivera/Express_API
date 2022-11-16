@@ -16,11 +16,12 @@ Goal.init({
         allowNull: false,
     },
 
-    /*user_id: {
+    user_id: {
         type: DataTypes.INTEGER,
+        allowNull: false,
         model: User,
         key: 'id',
-    }*/
+    }
 },
 {
     sequelize,

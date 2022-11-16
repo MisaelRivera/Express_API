@@ -5,6 +5,8 @@ const app = express(),
       userRoutes = require('./routes/userRoutes'),
       goalRoutes = require('./routes/goalRoutes');
 
+app.use('/static', express.static(__dirname + '/public'));
+
 app.use(express.json()) // for parsing application/json
 app.use(express.urlencoded({ extended: true }));
 
